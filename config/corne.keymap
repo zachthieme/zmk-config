@@ -33,6 +33,19 @@
         };
     };
 
+    behaviors {
+        bhm: bhm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BHM";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -44,10 +57,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp GRAVE             &kp Q           &kp W               &mt LG(E) E      &kp R              &mt LG(T) T    &kp Y        &mt LC(LS(NUMBER_7)) U  &mt LS(LC(NUMBER_8)) I  &mt LC(LS(NUMBER_9)) O  &kp P                    &kp BACKSLASH
-&kp ESCAPE            &mt LEFT_ALT A  &mt LEFT_CONTROL S  &mt LEFT_META D  &mt LEFT_SHIFT F   &kp G          &kp H        &mt RIGHT_SHIFT J       &mt RIGHT_META K        &mt RIGHT_CONTROL L     &mt RIGHT_ALT SEMICOLON  &kp SQT
-&kp LEFT_PARENTHESIS  &mt LG(Z) Z     &mt LG(X) X         &mt LG(C) C      &mt LG(K_PASTE) V  &kp B          &mt LG(N) N  &kp M                   &kp COMMA               &kp DOT                 &mt LG(F) SLASH          &kp RIGHT_PARENTHESIS
-                                                          &lt 4 LEFT_META  &lt 1 SPACE        &lt 2 TAB      &lt 2 ENTER  &lt 3 SPACE             &kp RALT
+&kp GRAVE             &kp Q            &kp W                &bhm LG(L) E      &kp R              &bhm LG(T) T    &kp Y         &bhm LC(LS(NUMBER_7)) U  &bhm LS(LC(NUMBER_8)) I  &bhm LC(LS(NUMBER_9)) O  &kp P                     &kp BACKSLASH
+&kp ESCAPE            &bhm LEFT_ALT A  &bhm LEFT_CONTROL S  &bhm LEFT_META D  &bhm LEFT_SHIFT F  &kp G           &kp H         &bhm RIGHT_SHIFT J       &bhm RIGHT_META K        &bhm RIGHT_CONTROL L     &bhm RIGHT_ALT SEMICOLON  &kp SQT
+&kp LEFT_PARENTHESIS  &bhm LG(Z) Z     &bhm LG(X) X         &bhm LG(C) C      &bhm LG(V) V       &kp B           &bhm LG(N) N  &kp M                    &kp COMMA                &kp DOT                  &bhm LG(F) SLASH          &kp RIGHT_PARENTHESIS
+                                                            &lt 4 LEFT_META   &lt 1 SPACE        &lt 2 TAB       &lt 2 ENTER   &lt 3 SPACE              &kp RALT
             >;
         };
 

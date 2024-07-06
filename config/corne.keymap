@@ -9,6 +9,30 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Launcher {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <16 14>;
+        };
+
+        OpenApps {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <19 21>;
+        };
+
+        WebTabs {
+            bindings = <&kp LA(SPACE)>;
+            key-positions = <19 20>;
+        };
+
+        WebHist {
+            bindings = <&kp LA(LC(SPACE))>;
+            key-positions = <16 15>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

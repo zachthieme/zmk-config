@@ -34,9 +34,9 @@
     };
 
     behaviors {
-        bhm: bhm {
+        bhm: balanced_homerow_mod {
             compatible = "zmk,behavior-hold-tap";
-            label = "BHM";
+            label = "Balance Homerow Mod";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;

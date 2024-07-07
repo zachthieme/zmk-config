@@ -31,6 +31,16 @@
             bindings = <&kp LA(LC(SPACE))>;
             key-positions = <16 15>;
         };
+
+        Escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <16 17>;
+        };
+
+        Backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <18 19>;
+        };
     };
 
     behaviors {

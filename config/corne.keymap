@@ -60,8 +60,10 @@
 &kp GRAVE             &kp Q            &kp W                &bhm LG(L) E      &kp R              &bhm LG(T) T    &kp Y         &bhm LC(LS(NUMBER_7)) U  &bhm LS(LC(NUMBER_8)) I  &bhm LC(LS(NUMBER_9)) O  &kp P                     &kp BACKSLASH
 &kp ESCAPE            &bhm LEFT_ALT A  &bhm LEFT_CONTROL S  &bhm LEFT_META D  &bhm LEFT_SHIFT F  &kp G           &kp H         &bhm RIGHT_SHIFT J       &bhm RIGHT_META K        &bhm RIGHT_CONTROL L     &bhm RIGHT_ALT SEMICOLON  &kp SQT
 &kp LEFT_PARENTHESIS  &bhm LG(Z) Z     &bhm LG(X) X         &bhm LG(C) C      &bhm LG(V) V       &kp B           &bhm LG(N) N  &kp M                    &kp COMMA                &kp DOT                  &bhm LG(F) SLASH          &kp RIGHT_PARENTHESIS
-                                                            &lt 4 LEFT_META   &lt 1 SPACE        &lt 2 TAB       &lt 2 ENTER   &lt 3 SPACE              &kp RALT
+                                                            &lt 3 LEFT_META   &lt 1 SPACE        &lt 2 TAB       &lt 2 ENTER   &lt 0 SPACE              &kp RALT
             >;
+
+            label = "Mac";
         };
 
         Arrows {
@@ -77,6 +79,8 @@
 &trans  &trans     &trans     &trans         &trans      &trans    &trans             &trans              &kp LC(C)          &trans               &trans  &trans
                               &trans         &trans      &trans    &trans             &trans              &trans
             >;
+
+            label = "Arrows";
         };
 
         Numbers {
@@ -92,15 +96,8 @@
 &trans  &kp AMPERSAND  &kp DOLLAR   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION    &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL  &kp ENTER
                                     &kp LGUI              &trans                 &kp SPACE          &trans      &kp NUMBER_0  &kp RALT
             >;
-        };
 
-        Windows {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
+            label = "Numbers";
         };
 
         BT {
@@ -110,6 +107,19 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &bt BT_CLR
                         &trans  &trans  &trans    &trans  &trans        &trans
             >;
+
+            label = "BT";
+        };
+
+        Windows {
+            bindings = <
+&kp GRAVE             &kp Q            &kp W                &bhm LC(L) E      &kp R              &bhm LC(T) T    &kp Y         &bhm LC(LS(NUMBER_7)) U  &bhm LS(LC(NUMBER_8)) I  &bhm LC(LS(NUMBER_9)) O  &kp P                     &kp BACKSLASH
+&kp ESCAPE            &bhm LEFT_ALT A  &bhm LEFT_CONTROL S  &bhm LEFT_META D  &bhm LEFT_SHIFT F  &kp G           &kp H         &bhm RIGHT_SHIFT J       &bhm RIGHT_META K        &bhm RIGHT_CONTROL L     &bhm RIGHT_ALT SEMICOLON  &kp SQT
+&kp LEFT_PARENTHESIS  &bhm LC(Z) Z     &bhm LC(X) X         &bhm LC(C) C      &bhm LC(V) V       &kp B           &bhm LC(N) N  &kp M                    &kp COMMA                &kp DOT                  &bhm LC(F) SLASH          &kp RIGHT_PARENTHESIS
+                                                            &lt 3 LEFT_META   &lt 1 SPACE        &lt 2 TAB       &lt 2 ENTER   &lt 0 SPACE              &kp RALT
+            >;
+
+            label = "Windows";
         };
     };
 };

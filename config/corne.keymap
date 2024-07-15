@@ -90,7 +90,7 @@
 &kp GRAVE             &kp Q            &kp W                &bhm LG(L) E      &kp R              &bhm LG(T) T    &kp Y         &bhm LC(LS(NUMBER_7)) U  &bhm LS(LC(NUMBER_8)) I  &bhm LC(LS(NUMBER_9)) O  &kp P                     &kp BACKSLASH
 &kp ESCAPE            &bhm LEFT_ALT A  &bhm LEFT_CONTROL S  &bhm LEFT_META D  &bhm LEFT_SHIFT F  &kp G           &kp H         &bhm RIGHT_SHIFT J       &bhm RIGHT_META K        &bhm RIGHT_CONTROL L     &bhm RIGHT_ALT SEMICOLON  &kp SQT
 &kp LEFT_PARENTHESIS  &bhm LG(Z) Z     &bhm LG(X) X         &bhm LG(C) C      &bhm LG(V) V       &kp B           &bhm LG(N) N  &kp M                    &kp COMMA                &kp DOT                  &bhm LG(F) SLASH          &kp RIGHT_PARENTHESIS
-                                                            &tog 0            &lt 1 SPACE        &lt 2 TAB       &lt 2 ENTER   &lt 0 SPACE              &kp LC(LG(Q))
+                                                            &lt 3 SPACE       &lt 1 SPACE        &lt 2 TAB       &lt 2 ENTER   &lt 4 SPACE              &kp LC(LG(Q))
             >;
 
             label = "Mac";
@@ -104,10 +104,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans  &trans         &trans      &trans    &trans             &trans              &trans          &trans               &trans  &trans
-&trans  &trans  &trans  &kp BACKSPACE  &kp DELETE  &trans    &mt LG(LEFT) LEFT  &mt PAGE_DOWN DOWN  &mt PAGE_UP UP  &mt LG(RIGHT) RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans         &trans      &trans    &trans             &trans              &kp LC(C)       &trans               &trans  &trans
-                        &trans         &trans      &trans    &trans             &trans              &trans
+&trans         &trans  &trans  &trans         &kp LA(LC(R))  &trans    &trans             &trans              &trans          &trans               &trans  &trans
+&kp LA(LS(E))  &trans  &trans  &kp BACKSPACE  &kp DELETE     &trans    &mt LG(LEFT) LEFT  &mt PAGE_DOWN DOWN  &mt PAGE_UP UP  &mt LG(RIGHT) RIGHT  &trans  &trans
+&trans         &trans  &trans  &trans         &trans         &trans    &trans             &trans              &kp LC(C)       &trans               &trans  &trans
+                               &trans         &trans         &trans    &trans             &trans              &trans
             >;
 
             label = "Arrows";
@@ -139,6 +139,15 @@
             >;
 
             label = "BT";
+        };
+
+        WindowMovement {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &kp LA(LC(NUMBER_7))  &kp LA(LC(N8))        &kp LC(LA(NUMBER_9))  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LA(H)  &kp LA(LC(NUMBER_4))  &kp LA(LC(N5))        &kp LA(LC(NUMBER_6))  &kp LA(L)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &kp LA(LC(NUMBER_1))  &kp LA(LC(NUMBER_2))  &kp LA(LC(NUMBER_3))  &trans     &trans
+                        &trans  &trans  &trans    &trans     &trans                &trans
+            >;
         };
     };
 };

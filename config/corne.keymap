@@ -37,9 +37,29 @@
             key-positions = <16 17>;
         };
 
-        Backspace {
-            bindings = <&kp BACKSPACE>;
+        DelPrevWord {
+            bindings = <&kp LA(BACKSPACE)>;
             key-positions = <18 19>;
+        };
+
+        SelectAll {
+            bindings = <&kp LG(A)>;
+            key-positions = <13 14>;
+        };
+
+        Save {
+            bindings = <&kp LG(S)>;
+            key-positions = <14 15>;
+        };
+
+        PrevWord {
+            bindings = <&kp LA(LEFT_ARROW)>;
+            key-positions = <31 32>;
+        };
+
+        NextWord {
+            bindings = <&kp LA(RIGHT_ARROW)>;
+            key-positions = <32 33>;
         };
     };
 
@@ -70,7 +90,7 @@
 &kp GRAVE             &kp Q            &kp W                &bhm LG(L) E      &kp R              &bhm LG(T) T    &kp Y         &bhm LC(LS(NUMBER_7)) U  &bhm LS(LC(NUMBER_8)) I  &bhm LC(LS(NUMBER_9)) O  &kp P                     &kp BACKSLASH
 &kp ESCAPE            &bhm LEFT_ALT A  &bhm LEFT_CONTROL S  &bhm LEFT_META D  &bhm LEFT_SHIFT F  &kp G           &kp H         &bhm RIGHT_SHIFT J       &bhm RIGHT_META K        &bhm RIGHT_CONTROL L     &bhm RIGHT_ALT SEMICOLON  &kp SQT
 &kp LEFT_PARENTHESIS  &bhm LG(Z) Z     &bhm LG(X) X         &bhm LG(C) C      &bhm LG(V) V       &kp B           &bhm LG(N) N  &kp M                    &kp COMMA                &kp DOT                  &bhm LG(F) SLASH          &kp RIGHT_PARENTHESIS
-                                                            &tog 4            &lt 1 SPACE        &lt 2 TAB       &lt 2 ENTER   &lt 0 SPACE              &kp RALT
+                                                            &tog 0            &lt 1 SPACE        &lt 2 TAB       &lt 2 ENTER   &lt 0 SPACE              &kp RALT
             >;
 
             label = "Mac";
@@ -84,10 +104,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans     &trans     &trans         &trans      &trans    &trans             &kp LA(LEFT)        &kp LA(BACKSPACE)  &kp LA(RIGHT_ARROW)  &trans  &trans
-&trans  &kp LG(A)  &kp LG(S)  &kp BACKSPACE  &kp DELETE  &trans    &mt LG(LEFT) LEFT  &mt PAGE_DOWN DOWN  &mt PAGE_UP UP     &mt LG(RIGHT) RIGHT  &trans  &trans
-&trans  &trans     &trans     &trans         &trans      &trans    &trans             &trans              &kp LC(C)          &trans               &trans  &trans
-                              &trans         &trans      &trans    &trans             &trans              &trans
+&trans  &trans  &trans  &trans         &trans      &trans    &trans             &trans              &trans          &trans               &trans  &trans
+&trans  &trans  &trans  &kp BACKSPACE  &kp DELETE  &trans    &mt LG(LEFT) LEFT  &mt PAGE_DOWN DOWN  &mt PAGE_UP UP  &mt LG(RIGHT) RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans         &trans      &trans    &trans             &trans              &kp LC(C)       &trans               &trans  &trans
+                        &trans         &trans      &trans    &trans             &trans              &trans
             >;
 
             label = "Arrows";
@@ -119,17 +139,6 @@
             >;
 
             label = "BT";
-        };
-
-        Windows {
-            bindings = <
-&kp GRAVE             &kp Q            &kp W                &bhm LC(L) E      &kp R              &bhm LC(T) T    &kp Y         &bhm LC(LS(NUMBER_7)) U  &bhm LS(LC(NUMBER_8)) I  &bhm LC(LS(NUMBER_9)) O  &kp P                     &kp BACKSLASH
-&kp ESCAPE            &bhm LEFT_ALT A  &bhm LEFT_CONTROL S  &bhm LEFT_META D  &bhm LEFT_SHIFT F  &kp G           &kp H         &bhm RIGHT_SHIFT J       &bhm RIGHT_META K        &bhm RIGHT_CONTROL L     &bhm RIGHT_ALT SEMICOLON  &kp SQT
-&kp LEFT_PARENTHESIS  &bhm LC(Z) Z     &bhm LC(X) X         &bhm LC(C) C      &bhm LC(V) V       &kp B           &bhm LC(N) N  &kp M                    &kp COMMA                &kp DOT                  &bhm LC(F) SLASH          &kp RIGHT_PARENTHESIS
-                                                            &trans            &trans             &trans          &trans        &trans                   &trans
-            >;
-
-            label = "Windows";
         };
     };
 };

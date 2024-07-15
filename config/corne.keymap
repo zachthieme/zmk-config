@@ -74,7 +74,7 @@
 
         Backslash {
             bindings = <&kp NON_US_BACKSLASH>;
-            key-positions = <33 32>;
+            key-positions = <34 33>;
         };
     };
 
@@ -104,7 +104,7 @@
             bindings = <
 &none  &kp Q            &kp W                &bhm LG(L) E      &bhm LG(R) R       &bhm LG(T) T    &kp Y         &bhm LC(LS(NUMBER_7)) U  &bhm LS(LC(NUMBER_8)) I  &bhm LC(LS(NUMBER_9)) O  &kp P                     &none
 &none  &bhm LEFT_ALT A  &bhm LEFT_CONTROL S  &bhm LEFT_META D  &bhm LEFT_SHIFT F  &kp G           &kp H         &bhm RIGHT_SHIFT J       &bhm RIGHT_META K        &bhm RIGHT_CONTROL L     &bhm RIGHT_ALT SEMICOLON  &none
-&none  &bhm LG(Z) Z     &bhm LG(X) X         &bhm LG(C) C      &bhm LG(V) V       &kp B           &bhm LG(N) N  &kp M                    &kp COMMA                &kp DOT                  &bhm LG(F) SLASH          &none
+&none  &bhm LG(Z) Z     &bhm LG(X) X         &bhm LG(C) C      &bhm LG(V) V       &kp B           &bhm LG(N) N  &kp M                    &kp COMMA                &kp DOT                  &kp F                     &none
                                              &lt 4 SPACE       &lt 1 SPACE        &lt 2 TAB       &lt 2 ENTER   &lt 3 SPACE              &kp LC(LG(Q))
             >;
 

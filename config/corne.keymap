@@ -81,6 +81,22 @@
         };
     };
 
+    macros {
+        v_split: v_split {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp MINUS>;
+            label = "V_SPLIT";
+        };
+
+        h_split: h_split {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp PIPE>;
+            label = "H_SPLIT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -109,10 +125,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans         &trans     &trans     &kp LA(LS(E))  &kp LA(LC(R))  &trans    &trans             &trans              &trans          &trans               &trans  &trans
-&kp LA(LS(E))  &kp LG(A)  &kp LG(S)  &kp BACKSPACE  &kp DELETE     &trans    &mt LG(LEFT) LEFT  &mt PAGE_DOWN DOWN  &mt PAGE_UP UP  &mt LG(RIGHT) RIGHT  &trans  &trans
-&trans         &trans     &trans     &trans         &trans         &trans    &trans             &trans              &kp LC(C)       &trans               &trans  &trans
-                                     &trans         &trans         &trans    &trans             &trans              &trans
+&trans         &trans     &trans     &kp LA(E)      &kp LA(R)   &trans      &trans             &trans              &trans          &trans               &trans  &trans
+&kp LA(LS(E))  &kp LG(A)  &kp LG(S)  &kp BACKSPACE  &kp DELETE  &v_split    &mt LG(LEFT) LEFT  &mt PAGE_DOWN DOWN  &mt PAGE_UP UP  &mt LG(RIGHT) RIGHT  &trans  &trans
+&trans         &trans     &trans     &trans         &trans      &h_split    &trans             &kp LS(LA(B))       &kp LC(C)       &kp LS(LA(S))        &trans  &trans
+                                     &trans         &trans      &trans      &trans             &trans              &trans
             >;
 
             label = "Arrows";
@@ -137,10 +153,10 @@
 
         WindowMovement {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LS(LA(M))  &kp LA(LC(NUMBER_7))  &kp LA(LC(N8))        &kp LC(LA(NUMBER_9))  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LA(H)      &kp LA(LC(NUMBER_4))  &kp LA(LC(N5))        &kp LA(LC(NUMBER_6))  &kp LA(L)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans         &kp LA(LC(NUMBER_1))  &kp LA(LC(NUMBER_2))  &kp LA(LC(NUMBER_3))  &trans     &trans
-                        &trans  &trans  &trans    &trans         &trans                &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &kp LA(M)  &kp LA(NUMBER_7)  &kp LA(N8)        &kp LA(NUMBER_9)  &trans  &trans
+&trans  &trans  &trans  &trans  &kp LA(F)  &trans    &trans     &kp LA(NUMBER_4)  &kp LA(N5)        &kp LA(NUMBER_6)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans     &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &trans  &trans
+                        &trans  &trans     &trans    &trans     &trans            &trans
             >;
         };
 

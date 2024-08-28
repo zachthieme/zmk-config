@@ -51,21 +51,6 @@
             bindings = <&kp LA(RIGHT_ARROW)>;
             key-positions = <32 33>;
         };
-
-        Backtick {
-            bindings = <&kp GRAVE>;
-            key-positions = <2 1>;
-        };
-
-        Apostrophe {
-            bindings = <&kp SQT>;
-            key-positions = <22 21>;
-        };
-
-        Backslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <34 33>;
-        };
     };
 
     behaviors {
@@ -108,10 +93,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q            &kp W                &bhm LG(L) E      &bhm LG(R) R       &bhm LG(T) T    &kp Y         &bhm LC(LS(NUMBER_7)) U  &bhm LS(LC(NUMBER_8)) I  &bhm LC(LS(NUMBER_9)) O  &kp P                     &none
-&none  &bhm LEFT_ALT A  &bhm LEFT_CONTROL S  &bhm LEFT_META D  &bhm LEFT_SHIFT F  &kp G           &kp H         &bhm RIGHT_SHIFT J       &bhm RIGHT_META K        &bhm RIGHT_CONTROL L     &bhm RIGHT_ALT SEMICOLON  &none
-&none  &bhm LG(Z) Z     &bhm LG(X) X         &bhm LG(C) C      &bhm LG(V) V       &kp B           &bhm LG(N) N  &kp M                    &kp COMMA                &kp DOT                  &kp SLASH                 &none
-                                             &lt 4 SPACE       &lt 1 SPACE        &lt 2 TAB       &lt 2 ENTER   &lt 3 SPACE              &kp LC(LG(Q))
+&kp GRAVE  &kp Q            &kp W                &bhm LG(L) E      &bhm LG(R) R       &bhm LG(T) T    &kp Y         &bhm LC(LS(NUMBER_7)) U  &bhm LS(LC(NUMBER_8)) I  &bhm LC(LS(NUMBER_9)) O  &kp P                     &kp NON_US_BACKSLASH
+&none      &bhm LEFT_ALT A  &bhm LEFT_CONTROL S  &bhm LEFT_META D  &bhm LEFT_SHIFT F  &kp G           &kp H         &bhm RIGHT_SHIFT J       &bhm RIGHT_META K        &bhm RIGHT_CONTROL L     &bhm RIGHT_ALT SEMICOLON  &kp SQT
+&none      &bhm LG(Z) Z     &bhm LG(X) X         &bhm LG(C) C      &bhm LG(V) V       &kp B           &bhm LG(N) N  &kp M                    &kp COMMA                &kp DOT                  &kp SLASH                 &none
+                                                 &lt 4 SPACE       &lt 1 SPACE        &lt 2 TAB       &lt 2 ENTER   &lt 3 SPACE              &kp LC(LG(Q))
             >;
 
             label = "Mac";

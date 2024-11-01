@@ -80,6 +80,13 @@
             bindings = <&kp GRAVE &kp PIPE>;
             label = "H_SPLIT";
         };
+
+        get_qoute: get_qoute {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(M)) &kp LG(V)>;
+            label = "GET_QOUTE";
+        };
     };
 
     keymap {
@@ -112,7 +119,7 @@
             bindings = <
 &trans         &trans     &trans     &kp LA(E)      &kp LA(R)   &trans      &trans             &trans              &trans          &trans               &trans  &trans
 &kp LA(LS(E))  &kp LG(A)  &kp LG(S)  &kp BACKSPACE  &kp DELETE  &v_split    &mt LG(LEFT) LEFT  &mt PAGE_DOWN DOWN  &mt PAGE_UP UP  &mt LG(RIGHT) RIGHT  &trans  &trans
-&trans         &trans     &trans     &trans         &trans      &h_split    &trans             &kp LS(LA(B))       &kp LC(C)       &kp LS(LA(S))        &trans  &trans
+&trans         &trans     &trans     &trans         &trans      &h_split    &get_qoute         &kp LS(LA(B))       &kp LC(C)       &kp LS(LA(S))        &trans  &trans
                                      &trans         &trans      &trans      &trans             &trans              &trans
             >;
 

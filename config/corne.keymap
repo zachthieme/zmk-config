@@ -32,8 +32,8 @@
             key-positions = <16 15>;
         };
 
-        Escape {
-            bindings = <&kp ESCAPE>;
+        Colon {
+            bindings = <&kp COLON>;
             key-positions = <16 17>;
         };
 
@@ -63,6 +63,13 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "balanced";
+        };
+
+        caps_word: caps_word {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPS_WORD";
+            #binding-cells = <0>;
+            continue-list = <A B C D E F G H I J K L O P M Q N T S U V R W Y X Z NUMBER_1 N1 NUMBER_2 N2 NUMBER_3 N3 NUMBER_4 N4 NUMBER_5 N5 NUMBER_6 N6 NUMBER_7 N7 NUMBER_8 N8 NUMBER_9 N9 NUMBER_0 N0 BACKSPACE BSPC MINUS UNDERSCORE UNDER DELETE DEL>;
         };
     };
 
@@ -100,10 +107,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp GRAVE  &kp Q         &kp W                &kp E             &kp R              &bhm LG(T) T       &kp Y         &bhm LC(LS(NUMBER_7)) U  &bhm LS(LC(NUMBER_8)) I  &bhm LC(LS(NUMBER_9)) O  &kp P                     &kp BACKSLASH
-&none      &kp A         &bhm LEFT_CONTROL S  &bhm LEFT_META D  &bhm LEFT_SHIFT F  &bhm LEFT_ALT G    &kp H         &bhm RIGHT_SHIFT J       &bhm RIGHT_META K        &bhm RIGHT_CONTROL L     &bhm RIGHT_ALT SEMICOLON  &kp SQT
-&tog 1     &bhm LG(Z) Z  &bhm LG(X) X         &bhm LG(C) C      &bhm LG(V) V       &kp B              &bhm LG(N) N  &kp M                    &kp COMMA                &kp DOT                  &kp SLASH                 &none
-                                              &lt 5 SPACE       &lt 2 SPACE        &lt 3 TAB          &lt 3 ENTER   &lt 4 SPACE              &kp LC(LG(Q))
+&kp GRAVE   &kp Q         &kp W                &kp E             &kp R              &bhm LG(T) T       &kp Y         &bhm LC(LS(NUMBER_7)) U  &bhm LS(LC(NUMBER_8)) I  &bhm LC(LS(NUMBER_9)) O  &kp P                     &kp BACKSLASH
+&caps_word  &kp A         &bhm LEFT_CONTROL S  &bhm LEFT_META D  &bhm LEFT_SHIFT F  &bhm LEFT_ALT G    &kp H         &bhm RIGHT_SHIFT J       &bhm RIGHT_META K        &bhm RIGHT_CONTROL L     &bhm RIGHT_ALT SEMICOLON  &kp SQT
+&tog 1      &bhm LG(Z) Z  &bhm LG(X) X         &bhm LG(C) C      &bhm LG(V) V       &kp B              &bhm LG(N) N  &kp M                    &kp COMMA                &kp DOT                  &kp SLASH                 &none
+                                               &lt 5 SPACE       &lt 2 ESCAPE       &lt 3 TAB          &lt 3 ENTER   &lt 4 SPACE              &kp LC(LG(Q))
             >;
 
             label = "Mac";
@@ -111,9 +118,9 @@
 
         gallium {
             bindings = <
-&trans  &kp B         &kp L         &kp D             &bhm LG(C) C       &bhm LG(V) V       &kp J             &kp Y               &kp O              &kp U         &kp SEMI  &kp BSLH
+&trans  &kp B         &kp L         &kp D             &bhm LG(C) C       &bhm LG(V) V       &kp K             &kp Y               &kp O              &kp U         &kp SEMI  &kp BSLH
 &trans  &kp N         &bhm LCTRL R  &bhm LEFT_META T  &bhm LEFT_SHIFT S  &bhm LEFT_ALT G    &bhm RIGHT_ALT P  &bhm RIGHT_SHIFT H  &bhm RIGHT_META A  &bhm RCTRL E  &kp I     &kp APOS
-&trans  &bhm LG(X) X  &kp Q         &kp M             &kp W              &bhm LG(Z) Z       &kp K             &kp F               &kp COMMA          &kp DOT       &kp FSLH  &trans
+&trans  &bhm LG(X) X  &kp Q         &kp M             &kp W              &bhm LG(Z) Z       &kp J             &kp F               &kp COMMA          &kp DOT       &kp FSLH  &trans
                                     &trans            &trans             &trans             &trans            &trans              &trans
             >;
         };

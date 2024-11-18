@@ -110,7 +110,7 @@
 &kp GRAVE   &kp Q         &kp W                &kp E             &kp R              &bhm LG(T) T       &kp Y             &bhm LC(LS(NUMBER_7)) U  &bhm LS(LC(NUMBER_8)) I  &bhm LC(LS(NUMBER_9)) O  &kp P          &kp BACKSLASH
 &caps_word  &kp A         &bhm LEFT_CONTROL S  &bhm LEFT_META D  &bhm LEFT_SHIFT F  &bhm LEFT_ALT G    &bhm RIGHT_ALT H  &bhm RIGHT_SHIFT J       &bhm RIGHT_META K        &bhm RIGHT_CONTROL L     &kp SEMICOLON  &kp SQT
 &tog 1      &bhm LG(Z) Z  &bhm LG(X) X         &bhm LG(C) C      &bhm LG(V) V       &kp B              &bhm LG(N) N      &kp M                    &kp COMMA                &kp DOT                  &kp SLASH      &tog 3
-                                               &lt 5 SPACE       &lt 2 ESCAPE       &lt 3 TAB          &lt 3 ENTER       &lt 4 SPACE              &kp LC(LG(Q))
+                                               &lt 5 SPACE       &lt 2 SPACE        &lt 3 TAB          &lt 3 ENTER       &lt 4 ESCAPE             &kp LC(LG(Q))
             >;
 
             label = "Mac";

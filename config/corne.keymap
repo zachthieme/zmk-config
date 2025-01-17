@@ -151,8 +151,8 @@
 
             bindings = <
 &none  &kp PERCENT    &kp CARET    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE           &kp PLUS    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &none
-&none  &kp HASH       &kp AT_SIGN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp ASTERISK       &kp MINUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH     &none
-&none  &kp AMPERSAND  &kp DOLLAR   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION    &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL     &trans
+&none  &kp HASH       &kp AT_SIGN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp ASTERISK       &kp MINUS   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &none
+&none  &kp AMPERSAND  &kp DOLLAR   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION    &kp PERIOD  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL     &trans
                                    &trans                &trans                 &trans             &trans      &kp NUMBER_0  &trans
             >;
 

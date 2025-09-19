@@ -109,20 +109,11 @@
             bindings = <
 &kp GRAVE   &kp Q             &kp W                &kp E            &kp R              &bhm LG(T) T    &kp Y         &bhm LC(LS(NUMBER_7)) U  &bhm LS(LC(NUMBER_8)) I  &bhm LC(LS(NUMBER_9)) O  &kp P                      &kp BACKSLASH
 &caps_word  &bhm LEFT_META A  &bhm LEFT_CONTROL S  &bhm LEFT_ALT D  &bhm LEFT_SHIFT F  &kp G           &kp H         &bhm RIGHT_SHIFT J       &bhm RIGHT_ALT K         &bhm RIGHT_CONTROL L     &bhm RIGHT_META SEMICOLON  &kp SQT
-&tog 1      &bhm LG(Z) Z      &bhm LG(X) X         &bhm LG(C) C     &bhm LG(V) V       &kp B           &bhm LG(N) N  &kp M                    &kp COMMA                &kp DOT                  &kp SLASH                  &tog 3
-                                                   &lt 5 SPACE      &lt 2 SPACE        &lt 3 TAB       &lt 3 ENTER   &lt 4 ESCAPE             &kp LC(LG(Q))
+&tog 2      &bhm LG(Z) Z      &bhm LG(X) X         &bhm LG(C) C     &bhm LG(V) V       &kp B           &bhm LG(N) N  &kp M                    &kp COMMA                &kp DOT                  &kp SLASH                  &kp LC(LG(Q))
+                                                   &lt 4 SPACE      &lt 1 SPACE        &lt 2 TAB       &lt 2 ENTER   &lt 3 ESCAPE             &none
             >;
 
             label = "Mac";
-        };
-
-        gallium {
-            bindings = <
-&trans  &kp B         &kp L         &kp D             &bhm LG(C) C       &bhm LG(V) V       &kp K             &kp Y               &kp O              &kp U         &kp SEMI  &kp BSLH
-&trans  &kp N         &bhm LCTRL R  &bhm LEFT_META T  &bhm LEFT_SHIFT S  &bhm LEFT_ALT G    &bhm RIGHT_ALT P  &bhm RIGHT_SHIFT H  &bhm RIGHT_META A  &bhm RCTRL E  &kp I     &kp APOS
-&trans  &bhm LG(X) X  &kp Q         &kp M             &kp W              &bhm LG(Z) Z       &kp J             &kp F               &kp COMMA          &kp DOT       &kp FSLH  &trans
-                                    &trans            &trans             &trans             &trans            &trans              &trans
-            >;
         };
 
         Arrows {
@@ -135,7 +126,7 @@
             bindings = <
 &trans  &trans     &trans     &kp LA(E)      &kp LA(R)   &trans      &trans             &trans              &trans          &trans               &trans  &trans
 &trans  &kp LG(A)  &kp LG(S)  &kp BACKSPACE  &kp DELETE  &v_split    &mt LG(LEFT) LEFT  &mt PAGE_DOWN DOWN  &mt PAGE_UP UP  &mt LG(RIGHT) RIGHT  &trans  &trans
-&trans  &trans     &trans     &trans         &trans      &h_split    &get_qoute         &kp LS(LA(B))       &kp LC(C)       &kp LS(LA(S))        &trans  &trans
+&trans  &trans     &trans     &trans         &trans      &h_split    &none              &none               &kp LC(C)       &none                &trans  &trans
                               &trans         &trans      &trans      &trans             &trans              &trans
             >;
 
